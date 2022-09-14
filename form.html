@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+
+	</head>
+<style type="text/css">
+
+body{
+font-family:Verdana;
+background-color:beige;
+}
+.input{
+	   /* text box size is form size */
+            width:600px;
+		margin:40px auto;
+		padding:5px;
+	color:black;
+border-radius:10px;
+font-size:30px;
+	background-color:lavender;/*form background color*/
+}
+.input h3{
+color:blue;
+font-size:30px;
+}
+.input input{
+
+		width:100%; /*text box size*/
+		font-size:20px;
+		  
+		border:5px;
+		box-shadow:2px;
+		border-radius:4px;/* radius is box join rounder*/
+		padding:10px  ;
+		box-sizing:border-box;
+		margin:0px;
+		position:relative;
+		}
+.input input:focus{
+		background-color:pink;
+		 
+}
+
+.btn button{
+	background-color:white;
+
+	font-size:30px;
+	color:blue;
+	margin-top:20px;
+	padding:15px 25px;
+	border-radius:8px;
+	border:1px solid;
+	}
+ body{
+     
+}
+</style>
+<div>
+	<body > 
+	 <form action="model.html" method="GET" enctype="multipart/form.data"> 
+	<!--enctype is big data send to sever helper -->	
+<div class="input" id="cen">
+  <center><h3>Sign Up</h3></center>
+</div>
+<div class="input" >
+ <label for="Name" class=" ">First Name</label>  
+
+	<input type="text"name="name" id="user name"
+ placeholder="Username" class="box " maxlength="30" required >  
+	</div>
+<div class="input" >
+ <label for="Name" class=" ">Last Name</label>  
+
+	<input type="text"name="name" id="user name"
+ placeholder="Username" class="box " maxlength="30" required >  
+	</div>
+	<!--<div class="input">
+
+	  <label for="password" class="  ">Password</label>  --?
+
+	<input type="password" class="box " name="password" id="password" 
+placeholder="password" minlength="8" required >
+	<!-- fill field using required and placeholder is lite identifier-->
+	<!--  -->
+	</div>
+<div class="input">	
+	<label class=" ">Date of birth</label><!-- step="10" year next jumped 10 years -->
+	<input type="date" class="box " name="Date of birth" max="2001-01-12" min="1999-06-12"  placeholder="dob"
+	 id= "date of birth" required >
+	<!-- year/month/date max and min value base -->
+</div>
+<div class="input">
+ <label for=" address" class="input ">address</label>  
+
+	<input type="text"name="address" id="address"
+ placeholder="Door No" class="box " maxlength="30" required >  
+<input type="text" name="address" id="address2"
+ placeholder="Street" class="box " maxlength="30" required > 
+<input type="text" name="address" id="address3"
+ placeholder="village/city" class="box " maxlength="30" required > 
+<input type="text" name="address" id="address4"
+ placeholder="taluk" class="box " maxlength="30" required > 
+<input type="text" name="address" id="address5"
+ placeholder="district" class="box " maxlength="30" required >
+<input type="number" name="address" id="address6"
+ placeholder="pin code" class="box " maxlength="6" minlength="6" required >  
+	</div>
+<!--<div class="input">
+	<label for="email" class=" "> Email</label>
+	<input type="email" name="email" class="box "  id="email" required >-->
+	<!-- url,tel,color and search type in input .tel is telephone number -->
+</div>
+
+  <div class="input">
+	<label for="Gender" class="hello">Gender</label><br><br>
+	<input type="radio" radio-size="40px" name="gender" id="male" value="male">
+	<label for="Gender">male</label> <br>
+	<input type="radio" name="gender" id="female"   value="female">
+	<label for="Gender">female</label> 
+ 
+	<!-- It confirm one clicked
+	and value  mention is important why? gender mention male or female   --> 
+	
+</div> 
+<div class="input">
+	<label for="sate">Native</label>
+	<select type="state" id="state" name="state" required> 
+	<option value="Tamilnadu">TamilNadu</option>
+	<option value="ap">AP</option>
+	<option value="KERALA">KERALA</option>
+	<!-- select type end multiple use word is select multiple states -->
+</select>
+</div>
+
+
+<div class="input">
+	<label for="resume">Resume</label>
+	<input type="file" id="file" name="file" required>
+
+</div>
+
+
+<div class="input">
+<label for="resume">image</label>
+	<input type="file" id="img" name="img" required>
+</div>
+<div class="input">
+	<input type="checkbox" class="box " name="sms alert" id="sms alert">
+
+	<label for="sms alert"class=" " >sms alert</label>
+	<!-- It is formal box use or not use -->
+</div>
+
+
+<div class="btn">
+
+	<!-- <input type ="image" src="submit.jpg"> -->
+	<center><button type="submit">Sing up</button>  
+	
+	<button type="Reset"  > Reset</button></center>
+</div>
+</form>  
+  <meta http-equiv="refresh" content="3  " />  
+ 
+	</body>
+
+</html>
